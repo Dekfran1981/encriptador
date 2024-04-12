@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Encriptador de Texto</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  </head>
-  <h2>ENCRIPTADOR MAGICO</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encriptador de Texto</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Estilos adicionales */
+    .encriptado, .encriptar {
+      border: 10px solid #070729; /* Borde azul oscuro */
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px 0px #070729; /* Sombra */
+    }
+    
+    /* Fuentes estilo medieval */
+    body, .texto, .terminos p, .botones button, .botones input[type="button"] {
+      font-family: 'MedievalSharp', cursive;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<h2>ENCRIPTADOR MÁGICO</h2>
 
-  <body>
-    <div class="container">
-      <div class="encriptar">
-        <textarea
-          name="texto"
-          class="texto"
-          id="texto"
-          cols="30"
-          rows="10"
-          placeholder="Ingresa el texto aquí"
-        ></textarea>
+<body>
+  <div class="container">
+    <div class="encriptar">
+      <textarea
+        name="texto"
+        class="texto"
+        id="texto"
+        cols="30"
+        rows="10"
+        placeholder="Ingresa el texto aquí"
+      ></textarea>
 
-        <div class="terminos">
-          <p>Solo letras minúsculas y sin acentos.</p>
-        </div>
-        <div class="botones">
-          <button class="btn-encriptar" type="button" onclick="encriptar()">
-            Encriptar
-          </button>
-          <input
-            type="button"
-            class="btn-desencriptar"
-            value="Desencriptar"
-            onclick="desencriptar()"
-          />
-        </div>
+      <div class="terminos">
+        <p>Solo letras minúsculas y sin acentos.</p>
       </div>
-      <div class="encriptado">
-        <img src="img/1.jpg" alt="" id="muñeco" />
-        <div class="mensaje-encriptado" id="mensaje-encriptado">
-          <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
-          <p id="parrafo">
-            Ingresa el texto que deseas encriptar o desencriptar
-          </p>
-        </div>
+      <div class="botones">
+        <button class="btn-encriptar" type="button" onclick="encriptar()">
+          Encriptar
+        </button>
+        <input
+          type="button"
+          class="btn-desencriptar"
+          value="Desencriptar"
+          onclick="desencriptar()"
+        />
       </div>
     </div>
-  </body>
-  <script src="index.js"></script>
-  <footer>  
-    <p> Ideas Buzz 2024 AL Infinito y Mas Halla. . . - Todos los derechos reservados</p>
+    <div class="encriptado">
+      <img src="img/1.jpg" alt="" id="muñeco" />
+      <div class="mensaje-encriptado" id="mensaje-encriptado">
+        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+        <p id="parrafo">
+          Ingresa el texto que deseas encriptar o desencriptar
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+<footer>  
+  <p> Ideas Buzz 2024 AL Infinito y Más Allá - Todos los derechos reservados</p>
 </footer>
 </html>

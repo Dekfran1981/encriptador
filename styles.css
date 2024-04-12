@@ -9,6 +9,18 @@
     height: 100vh;
     background: #01040f;
   }
+  .texto {
+    /* Otros estilos */
+    border: 20px solid #121213; /* Borde azul oscuro */
+    border-radius: 10px;
+  }
+  
+  .encriptado img {
+    /* Otros estilos */
+    border: 10px solid #070729; 
+    border-radius: 10px;
+  }
+  
   
   .texto {
     position: absolute;
@@ -222,4 +234,52 @@
       display: none;
       visibility: hidden;
     }
+  }* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #01040f;
+  }
+  
+  .texto {
+    /* Otros estilos */
+    border: 20px solid #363671; /* Borde azul oscuro */
+    border-radius: 10px;
+    font-family: "MedievalSharp", cursive; /* Utilizando la fuente MedievalSharp */
+  }
+  
+  .encriptado img {
+    /* Otros estilos */
+    border: 10px solid #070729;
+    border-radius: 10px;
+  }
+  
+  .texto,
+  #titulo-mensaje,
+  #parrafo {
+    font-family: "MedievalSharp", cursive; /* Aplicando la fuente MedievalSharp a los textos */
+    color: #ced0d2; /* Color de texto similar al pergamino */
+  }
+  
+  .mensaje-encriptado h2 {
+    width: 60%;
+    font-style: normal;
+    font-weight: normal; /* Quitando el peso de la fuente para dar un aspecto más antiguo */
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+  }
+  
+  .mensaje-encriptado p {
+    width: 80%;
+    font-style: normal;
+    font-weight: normal; /* Quitando el peso de la fuente para dar un aspecto más antiguo */
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
   }
